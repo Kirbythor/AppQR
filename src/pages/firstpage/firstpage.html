@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Bienvenido</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Seleccione operación
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-lines>
+        <ion-item>
+          <button ion-button block (click)="gotoQR()">Generate and test QR code</button>
+        </ion-item>
+        <ion-item>
+            <button ion-button block (click)="gotoLista()">Check contact List</button>
+          </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -10,9 +10,9 @@
 <ion-content padding>
   <ion-list no-lines>
     <ion-item *ngFor="let contact of contactsFound">
-      <h2>{{contact.displayName}}</h2>
+      <h2>{{contact.displayName}}</h2> <!-- Dato de contacto-->
       <p *ngFor="let num of contact?.phoneNumbers">
-        {{num.value}}
+        {{num.value}} <!-- Dato de contacto-->
       </p>
     </ion-item>
     <ion-item>
@@ -20,9 +20,10 @@
       <h3>El siguiente contacto será agregado:</h3>
       <hr>
       <br>
-      <h3>{{code}}</h3>
+      <h3>{{code}}</h3><!-- Información guardada de contacto-->
     </ion-item>
     <ion-item>
+      <!-- Evento que dispara el almacenamiento del contacto cuando los datos han sido guardados-->
       <button ion-button block (click)="addContact()">Add Contact</button>
     </ion-item>
   </ion-list>

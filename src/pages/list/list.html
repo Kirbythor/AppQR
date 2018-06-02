@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contactos
+      Lista de Contactos
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -17,8 +17,10 @@
     </ion-item>
     <ion-item>
       <hr>
-      <h3>El siguiente contacto será agregado: {{code}}</h3>
+      <h3>El siguiente contacto será agregado:</h3>
       <hr>
+      <br>
+      <h3>{{code}}</h3>
     </ion-item>
     <ion-item>
       <button ion-button block (click)="addContact()">Add Contact</button>

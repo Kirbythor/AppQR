@@ -15,16 +15,17 @@ export class ListPage {
   public texto:any=null;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,private contacts:Contacts) {
-    this.search('');
+    this.search('');//mostrar los contactos
   }
 
   ionViewDidLoad() {
-     //this.code=this.navParams.get('code');
-     this.code=this.navParams.get('code');;
+    //Obtención de valores a través de NavParams
+     this.code=this.navParams.get('code');
      this.texto='Mundo';
   }
 
   search(q){
+    //Búsqueda de contactos que cumplen con filtros
     const option:IContactFindOptions={
       filter:q
     }
@@ -34,12 +35,12 @@ export class ListPage {
   }
 
   onKeyUp(ev){
-    this.search(ev.target.value);
+    this.search(ev.target.value);//Busqueda No implementada
   }
 
   addContact(){
+    //Descomposición de contenido de cadena codificada
     let txt=this.code;
-    //Smith John 6471234567
     let arr=txt.split(',');
     let fname=arr[0];
     let lname=arr[1];

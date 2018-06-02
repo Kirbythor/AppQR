@@ -11,11 +11,11 @@
 
   <div>
     <ion-input style="background-color:gray" type="text" [(ngModel)]="encodText"></ion-input>
-    <button ion-button block (click)="encode()">Encode</button>
+    <button ion-button round (click)="encode()">Encode</button>
   </div>
 
   <div>
-    <button ion-button block (click)="scan()">Scan</button>
+    <button ion-button round (click)="scan()">Scan</button>
     <div *ngIf="scannedData.text">
       <label>Your Barcode is</label>
       <br>
@@ -24,7 +24,7 @@
   </div>
 
   <div>
-    <button ion-button block (click)="createContact()">Mandar datos</button>
+    <button ion-button round (click)="createContact()">Mandar datos</button>
   </div>
 
 
